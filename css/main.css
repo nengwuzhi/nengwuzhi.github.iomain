@@ -17,7 +17,7 @@ body {
 	text-align: center;
 	padding: 0px 20px 0px 20px;
 	border-top: 4px solid #333;
-	background: #f9d4239e url(../images/pattern.png) repeat top left;
+	background: #f5f2e49e url(../images/pattern.png) repeat top left;
 
 }
 
@@ -110,7 +110,7 @@ h1 {
     float: left;
     border-radius: 3px;
     border: 0px solid #eee;
-    background: #222!important;
+    background: #29241c!important;
     background: none repeat scroll 0% 0% #FFF;
     border-radius: 0;
     box-shadow: none;
@@ -303,9 +303,9 @@ only screen and (max-width: 600px) {
 
 
 .post-content {
-    background: #222222!important;
+    background: #fff2bb!important;
     border-radius: 0;
-    color: #444;
+    color: #383630;
 }
 .post-title {
     margin: 40px 0px 8px 0px;
