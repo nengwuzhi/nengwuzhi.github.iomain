@@ -81,43 +81,10 @@ h1 {
 	text-align: left;
 }
 
-#heading {
-	margin: 20px 0px 40px 0px;
-	position: relative;
-	padding: 0px 0px 15px 0px;
-	border-bottom: 0px solid #eee;
-}
-
-#logo {
-	float: left;
-	font-size: 20px;
-}
-
-#links a {
-	color: #666;
-}
-
-#logo a {
-    font-size: 20px;
-    color: #666;
-    text-decoration: none;
-    font-family: "Raleway";
-}
 
 
-#links {
-	float: right;
-	margin: 20px 0 0 0;
-	color: #eee;
-}
 
-#links img {
 
-	box-shadow: 0 0px 0px #cccccc;
-	border-radius: 0px;
-    padding: 0px;
-    margin-bottom: 10px;
-}
 
 #content {
     margin: 0px 15% 0px ;
