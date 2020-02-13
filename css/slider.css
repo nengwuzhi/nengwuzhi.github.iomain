@@ -6,11 +6,7 @@
  */
 /* -----Container----- */
 
-body {
-  margin: 0;
-  background-color: #333;
-  font-family:'Open Sans';
-}
+
 h1 { margin:150px auto 30px auto; text-align:center; color:#fff}
 .container {
   margin: auto;
