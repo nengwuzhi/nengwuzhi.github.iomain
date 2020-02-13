@@ -14,7 +14,7 @@ font-family: 'Marmelad', sans-serif;
 
 .am-header{
     height: 48px;
-    width: 100%;
+    width: 96.8%;
     background: var(--theme-color); 
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
