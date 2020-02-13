@@ -1,5 +1,5 @@
 permalink: /:categories/:title/
-url: "http://example.com"
+url: "https://nengwuzhi.github.io/"
 full_name: "Saigon Jekyll Theme"
 first_name: "Just"
 last_name: "Me"
@@ -9,3 +9,13 @@ disqus_shortname: "example"
 copyright_year: "2016"
 google_analytics_code: ""
 aboutme: "I like ramen noodles with cream."
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: blog
+      styles : [post.css]
