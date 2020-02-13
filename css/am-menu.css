@@ -11,11 +11,6 @@ font-family: 'Assistant', sans-serif;
 font-family: 'Marmelad', sans-serif;
 */
 
-* {margin: 0; padding: 0;}
-body{
-   font-family: 'Lato', sans-serif;
-
-}
 
 .am-header{
     height: 48px;
