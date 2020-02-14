@@ -109,7 +109,7 @@ h1 {
     margin-left: 20px;
     width: 250px;
     float: left;
-    background: #de4927!important;
+    background: #ffffffb0!important;
     border: 1px solid #ffffff;
     border-bottom: 1px solid #b1b1b1;  
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22), 0 0 50px #f9d42326 inset;
@@ -140,13 +140,13 @@ h1 {
 }
 
 .post-content {
-	margin-top: 10px;
-	font-size: 13px;
-        background: #fffef7!important;
-        color: #383630;
-	padding: 20px 30px;
-	background: url('http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/entry-meta-shadow.png') no-repeat scroll center top #FBFBFB;
-	border-radius: 0px 0px 0px 0px;
+    margin-top: 10px;
+    font-size: 13px;
+    /* background: #fffef7!important; */
+    color: #383630;
+    padding: 20px 30px;
+    background: url(http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/entry-meta-shadow.png) no-repeat scroll center top #FBFBFB;
+    border-radius: 0px 0px 0px 0px;
 }
 
 #side-bar {
