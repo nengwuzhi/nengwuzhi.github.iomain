@@ -333,14 +333,13 @@ font-family: 'Marmelad', sans-serif;
 
 }
 .am-container h3{
-   color: #fff; 
-   font-family: 'Marmelad', sans-serif;
-   text-shadow: 1px 0.01px rgba(0, 0, 0, 0.1);
-   font-weight: 400;
-   padding: 10px;
-   font-size: 18px;
-   border-bottom: 1px dotted rgba(255, 255, 255, 0.096);
-  
+    color: #c1c1c1;
+    font-family: 'Marmelad', sans-serif;
+    text-shadow: 2px 0.3px rgba(2, 2, 2, 0.52);
+    font-weight: 400;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
     
 }
 
