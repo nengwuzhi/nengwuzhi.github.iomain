@@ -549,8 +549,9 @@ display: inline-block;
 .grid-items{
    list-style: none; 
    padding: 8px;
-  overflow: auto;
+   overflow: auto;
    margin: 0;
+   text-align: center;
    height: 154px;
   
 }
