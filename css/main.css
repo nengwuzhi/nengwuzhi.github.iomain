@@ -356,7 +356,7 @@ h1.post-title {
 	#posts.leftblock {
 		width: 100%;
 	        float: right;
-		margin: -20px;
+		margin: 0px -80px 0px 0px;
 	}
 	#posts ul{width:100%}
 	.rightblock{
