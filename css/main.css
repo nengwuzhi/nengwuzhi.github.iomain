@@ -54,9 +54,9 @@ a:hover {
 
 img{
 	border: 0px;
-	box-shadow: 0 0px 5px #cccccc;
+	box-shadow: 0 0px 5px #9E9E9E;
 	border-radius: 5px;
-    	//padding: 3px;
+    	padding: 3px;
 }
 
 a img {
