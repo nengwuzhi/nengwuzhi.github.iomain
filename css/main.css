@@ -137,10 +137,11 @@ h1 {
 .post-content {
 	margin-top: 10px;
 	font-size: 13px;
-
+        background: #fffef7!important;
+        color: #383630;
 	padding: 20px 30px;
 	background: url('http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/entry-meta-shadow.png') no-repeat scroll center top #FBFBFB;
-	border-radius: 0px 0px 3px 3px;
+	border-radius: 0px 0px 0px 0px;
 }
 
 #side-bar {
@@ -299,11 +300,7 @@ only screen and (max-width: 600px) {
 }
 
 
-.post-content {
-    background: #fffef7!important;
-    border-radius: 0;
-    color: #383630;
-}
+
 .post-title {
     margin: 40px 0px 8px 0px;
 }
