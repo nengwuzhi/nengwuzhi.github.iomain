@@ -105,7 +105,7 @@ h1 {
 }
 
 #posts ul li {
-   margin: 0px 20px 20px 0px;
+   margin: 0px 20px 20px 20px;
     width: 250px;
     float: left;
     background: #de4927!important;
