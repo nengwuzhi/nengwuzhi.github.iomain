@@ -105,14 +105,14 @@ h1 {
 }
 
 #posts ul li {
-    margin: 0px 20px 20px 0px;
+   margin: 0px 20px 20px 0px;
     width: 250px;
     float: left;
-    border: 1px solid #d8d8d8;
-    background: #29241c!important;
+    border: 1px solid #d0d0d0;
+    background: #de4927!important;
     background: none repeat scroll 0% 0% #FFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22), 0 0 30px #f9d42345 inset;
     border-radius: 0;
-    box-shadow: none;
 }
 #posts ul li img {
 	//width: 95%;
