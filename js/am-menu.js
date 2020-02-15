@@ -72,7 +72,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
 //Colorful Cloud Tags
   var totalTags = $(".cloud-tags li").length; //to find total cloud tags
-  var mct = $(".cloud-tags").find("li a");  //select all tags links to make them colorful
+  var mct = $(".cloud-tags").find("a");  //select all tags links to make them colorful
   var tagColor = ["#81D8D0", "#5CB3FF", "#95B9C7", "#C11B17", "#3B9C9C" , "#FF7F50", "#FFD801", "#79BAEC", "#F660AB", "#3D3C3A", "#3EA055", "#ff66ff"] // set of colors for cloud tags
       tag = 0; color = 0; //assign colors to tags with loop, unlimited number of tags can be added to the menu
         do {
@@ -224,23 +224,6 @@ $(closeVpage).bind('click', function(){
 });
 /* End Virtual Page */
 
-// Drop Downs
-$(".dropdown").click(function(){
-   $(this).toggleClass("down");
-   var todrop = $(this).find('+ .dropdown-items');
-   var n = $(this).find('+ .dropdown-items li').length;
-   var totalDrops = n*41;
-$(todrop).animate({
-'height' : totalDrops
-}, 300);
-   if( $(todrop).height() == totalDrops){
-    $(todrop).animate({
-      'height' : '0',
-   }, 200);
-}
-     
-
-}); // end (dropdown)
 
 
 }); //end (has-sub click function)
