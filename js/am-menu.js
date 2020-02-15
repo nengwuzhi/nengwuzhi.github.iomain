@@ -65,7 +65,7 @@
     }
 
 //Colorful Cloud Tags
-  var totalTags = $(".cloud-tags li").length; //to find total cloud tags
+  var totalTags = $(".cloud-tags").length; //to find total cloud tags
   var mct = $(".cloud-tags").find("a");  //select all tags links to make them colorful
   var tagColor = ["#81D8D0", "#5CB3FF", "#95B9C7", "#C11B17", "#3B9C9C" , "#FF7F50", "#FFD801", "#79BAEC", "#F660AB", "#3D3C3A", "#3EA055", "#ff66ff"] // set of colors for cloud tags
       tag = 0; color = 0; //assign colors to tags with loop, unlimited number of tags can be added to the menu
