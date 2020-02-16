@@ -377,6 +377,7 @@ h1.post-title {
     width: 1140px;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .page .left {
