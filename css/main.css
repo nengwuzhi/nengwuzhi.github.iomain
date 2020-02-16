@@ -416,3 +416,11 @@ button.anchor {
     font-size: 16px;
     font-weight: bold;
 }
+
+.page .right .content-ul {
+    overflow-y: auto;
+    padding-right: 10px;
+    line-height: 1.8;
+    padding-left: 35px;
+}
+
