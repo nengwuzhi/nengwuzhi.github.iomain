@@ -374,3 +374,12 @@ h1.post-title {
 		color: #555!important;
 		}
 }
+
+/* tag */
+.page.clearfix {
+    width: 1140px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
