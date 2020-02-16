@@ -440,3 +440,11 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
     color: #4d6dad;
 }
 
+
+.page .left ul li i {
+    margin-right: 5px;
+}
+
+.page .left ul li .categories i {
+    color: #9e9d9d;
+}
