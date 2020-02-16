@@ -19,3 +19,7 @@ defaults:
     values:
       layout: blog
       styles : [post.css]
+
+# url
+category_dir: category/
+tag_dir: tag/
