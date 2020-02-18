@@ -20,7 +20,7 @@
 		<div id='content'>
 
 			<div id='page'>
-				<h1 id='page-title'>{{page.title}}</h1>
+
 				{{content}}
 				<a rel="nofollow" target="_blank" href="http://bitcoin.travel/listing-category/bitcoin-restaurants/?type=affiliate&amp;id=293">
 					<img src="http://i1381.photobucket.com/albums/ah227/peterhoffler/Bitcoin-Travel_Restaurants_Banner_zpsv6arlaot.png">
