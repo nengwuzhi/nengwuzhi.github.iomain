@@ -370,6 +370,12 @@ h1.post-title {
 }
 
 /* _post */
+.page {
+    width: 1140px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 .page .left {
     width: 75%;
     float: left;
