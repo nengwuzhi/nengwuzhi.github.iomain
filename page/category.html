@@ -14,7 +14,7 @@ type: page
         <ul>
             {% for category in site.categories %}
             <h2 id="{{category | first}}">{{category | first}}</h2>
-                {% for posts in category  %}
+                {% for cat in category  %}
                    {% for post in cat[1] %}
                         {% if post.url %}
                         <li class='post'>
