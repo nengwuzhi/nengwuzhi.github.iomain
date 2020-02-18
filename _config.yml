@@ -16,7 +16,7 @@ defaults:
       type: posts
     values:
       layout: blog
-      styles : [_post.scss]
+      styles : [_post.css]
 
 # url
 category_dir: category/
