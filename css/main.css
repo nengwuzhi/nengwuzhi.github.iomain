@@ -37,6 +37,46 @@ pre code {
 	font-weight: normal;
 }
 
+.pagination {
+    margin: 40px 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.assistive-text, .screen-reader-text {
+    overflow: hidden;
+    position: absolute!important;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+}
+
+.pagination .current {
+    background-color: #4d4d4d;
+    box-shadow: 0 2px 0 #000;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+
+.pagination a, .pagination>span {
+    display: inline-block;
+    padding: 13px 14px 12px;
+    margin-right: 2px;
+    line-height: normal;
+    background-color: #eee;
+    box-shadow: 0 2px 0 #c8c8c8;
+    border-radius: 3px;
+    color: #494949;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+
 a {
 /*
 	color: rgba(80, 160, 228);
