@@ -481,3 +481,10 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     font-weight: bold;
 }
+
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
