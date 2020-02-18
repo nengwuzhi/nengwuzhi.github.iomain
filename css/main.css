@@ -435,6 +435,10 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
     color: #c6cbe9;
 }
 
+.page .anchor {
+    display: none;
+}
+
 .page .right {
     float: left;
     width: 25%;
