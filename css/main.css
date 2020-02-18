@@ -369,10 +369,6 @@ h1.post-title {
 		}
 }
 
-
-
-
-
 /* _post */
 .page .left {
     width: 75%;
@@ -405,4 +401,12 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
     width: 135px;
 }
 
+.page .left ul li .title {
+    font-weight: bold;
+    color: #223253;
+    transition: 0.3s ease;
+}
 
+.page .left a:not([title]) {
+    word-break: break-all;
+}
