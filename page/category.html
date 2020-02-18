@@ -12,20 +12,24 @@ type: page
         <h1>{{page.title}}</h1>
         <hr>
         <ul>
-					  {% for cat in site.categories %}
-					{% for post in cat[1] %}
-						<li class='post'>
-							{% if post.image %}
-								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
-							{% endif %}
-							<div class="postcontent">
-					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
+ {% for category in site.categories %}
+            <h2 id="{{category | first}}">{{category | first}}</h2>
+                {% for posts in category  %}
+                    {% for post in posts %}
+                        {% if post.url %}
+                        <li>
+                            <time>
+                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                            </time>
+                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
-								<div class='post-content'>{{post.summary}}</div>
-							</div>
-						</li>
-					{% endfor %}
-					{% endfor %}
+                            {% include category.html %}
+                            {% include tag.html %}
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
         </ul>
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
