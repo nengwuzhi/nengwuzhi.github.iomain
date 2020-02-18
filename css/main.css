@@ -410,3 +410,8 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
 .page .left a:not([title]) {
     word-break: break-all;
 }
+
+.page .left ul li .categories {
+    padding: 0 15px;
+}
+
