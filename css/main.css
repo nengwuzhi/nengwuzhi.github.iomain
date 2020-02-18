@@ -411,6 +411,19 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
     word-break: break-all;
 }
 
+.page .left ul li .pageTag a:hover {
+    background-color: #c0ddc7;
+}
+
+.page .left ul li .pageTag a {
+    padding: 0 5px;
+    background-color: #c6cbe9;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 90%;
+    transition: 0.3s ease;
+}
+
 .page .left ul li .categories {
     padding: 0 15px;
 }
