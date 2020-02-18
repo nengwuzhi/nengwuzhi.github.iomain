@@ -422,3 +422,11 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
 .page .left ul li i {
     margin-right: 5px;
 }
+
+.page .left ul li .categories a {
+    padding: 0 5px;
+    background-color: #9e9d9d;
+    color: #fff;
+    font-size: 90%;
+    transition: 0.3s ease;
+}
