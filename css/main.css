@@ -454,3 +454,11 @@ body, html, div, header, footer, nav, li, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 1px;
     -ms-word-break: break-all;
     word-break: break-all;
+}
+	
+.page .right .side>div {
+    padding: 12px 15px;
+    border-bottom: 1px solid #c0c0c0;
+    font-size: 16px;
+    font-weight: bold;
+}
