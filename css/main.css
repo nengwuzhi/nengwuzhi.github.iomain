@@ -389,13 +389,12 @@ h1.post-title {
 .page .left ul>h2 {
     margin-left: -40px;
     color: #6a6b6b;
-}
-
-h2 {
     font-size: 26px;
-    /* border-bottom: 1px solid #eeeeee61; */
+    border-bottom: 1px solid #eee;
     margin: 50px 0 25px;
 }
+
+
 .page .left ul li {
     line-height: 1.8;
     color: #888888;
