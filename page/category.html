@@ -14,11 +14,11 @@ type: page
         <ul>
             {% for category in site.categories %}
             <h2 id="{{category | first}}">{{category | first}}</h2>
-                {% for cat in category  %}
+              {% for post in site.categories.blog %}
                    {% for post in cat[1] %}
                         {% if post.url %}
                         <li class='post'>
-	        {% if post.image %}
+	             {% if post.image %}
 	<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
 	        {% endif %}
 	     <div class="postcontent">
