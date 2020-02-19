@@ -45,11 +45,6 @@ pre code {
     margin: 40px 0;
 }
 
-.clearfix:before, .clearfix:after {
-    content: "";
-    display: table;
-}
-
 .assistive-text, .screen-reader-text {
     overflow: hidden;
     position: absolute!important;
