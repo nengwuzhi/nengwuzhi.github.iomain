@@ -90,15 +90,8 @@ a:hover {
 }
 
 
-
 a img {
 	border: 4px;
-}
-
-h1 {
-	font-size: 30px;
-	font-weight: normal;
-	background: #b5b5b559 url(https://tympanus.net/Tutorials/MovingBoxesContent/images/pattern.png) repeat top left;
 }
 
 
@@ -351,8 +344,10 @@ background-position: center;
 	margin-bottom: 40px;
 }
 
-h1.post-title {
-	font-weight:200
+h1.post-title {	
+    font-size: 25px;
+    font-weight: normal;
+    background: #ffffff url(https://tympanus.net/Tutorials/MovingBoxesContent/images/pattern.png) repeat top left;
 }
 
 #footer {
