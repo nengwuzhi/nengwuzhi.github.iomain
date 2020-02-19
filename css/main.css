@@ -127,15 +127,15 @@ a img {
 }
 
 #posts ul li {
-    margin: 0px 15px 15px 0px;
-
+   margin: 0px 15px 15px 0px;
     width: 250px;
     float: left;
-    background: #ffffffb0!important;
-    border: 1px solid #ffffff;
-    border-bottom: 1px solid #b1b1b1;  
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22), 0 0 50px #f9d42326 inset;
+    background: #ffffff!important;
+    border: 1px solid #FF9800;
+    border-bottom: 1px solid #FF9800;
+    box-shadow: 0 1px 2px rgba(90, 90, 90, 0.82), 0 0 50px #00000036 inset;
 }
+
 #posts ul li img {
 	width: 100%;
 }
