@@ -19,7 +19,7 @@ body {
 }
 
 div#posts {
-    margin-left: 120px;
+    margin-left: 4%;
 }
 
 body, div, a, input, select, button, textarea {
@@ -107,9 +107,9 @@ a img {
 
 
 #content {
-    margin: 0px 0% 0px;
+    margin: 0px 5% 0px;
     background: #ffffff;
-    padding-top: 20px;
+    padding: 30px 20px 20px 20px;
     margin-top: 40px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 0 50px #d6d6d630 inset;
 }
