@@ -18,6 +18,10 @@ body {
 
 }
 
+div#posts {
+    margin-left: 120px;
+}
+
 body, div, a, input, select, button, textarea {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
