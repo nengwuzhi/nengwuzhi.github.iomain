@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+      <link href="css/mfb.css" rel="stylesheet">
+</head>
+<body>
+	
 	<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
       <li class="mfb-component__wrap">
         <a href="#" class="mfb-component__button--main">
@@ -24,3 +32,13 @@
         </ul>
       </li>
     </ul>
+	
+	<script type="text/javascript">
+		var panel = document.getElementById('panel'),
+	        menu = document.getElementById('menu'),
+	        showcode = document.getElementById('showcode'),
+	        selectFx = document.getElementById('selections-fx'),
+	        selectPos = document.getElementById('selections-pos'),
+	</script>
+</body>
+</html>
