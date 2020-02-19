@@ -132,8 +132,8 @@ a img {
     width: 250px;
     float: left;
     background: #ffffff!important;
-    border: 1px solid #FF9800;
-    border-bottom: 1px solid #FF9800;
+    border: 1px solid #cddc39d1;
+    border-bottom: 1px solid #cddc39d1;
     box-shadow: 0 1px 2px rgba(90, 90, 90, 0.82), 0 0 50px #00000036 inset;
 }
 
