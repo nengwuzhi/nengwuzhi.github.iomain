@@ -157,7 +157,7 @@ a img {
 }
 
 img:hover {
-    box-shadow: 0 0.5px 1px 1px #908f8f;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.9);
 }
 
 .post-date {
