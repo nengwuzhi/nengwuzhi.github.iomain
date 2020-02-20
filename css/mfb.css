@@ -1,6 +1,6 @@
 .mfb-component--bl,.mfb-component--br,.mfb-component--tl,.mfb-component--tr {
 	box-sizing: border-box;
-	margin: 25px;
+	margin: 15px;
 	position: fixed;
 	white-space: nowrap;
 	z-index: 30;
@@ -72,7 +72,7 @@
 }
 
 .mfb-component__wrap {
-	padding: 15px;
+	padding: 25px;
 	margin: -25px
 }[data-mfb-state=open] .mfb-component__child-icon,[data-mfb-state=open] .mfb-component__icon,[data-mfb-state=open] .mfb-component__main-icon--active,[data-mfb-state=open] .mfb-component__main-icon--resting,[data-mfb-toggle=hover]:hover .mfb-component__child-icon,[data-mfb-toggle=hover]:hover .mfb-component__icon,[data-mfb-toggle=hover]:hover .mfb-component__main-icon--active,[data-mfb-toggle=hover]:hover .mfb-component__main-icon--resting {
 	-webkit-transform: scale(1) rotate(0deg);
