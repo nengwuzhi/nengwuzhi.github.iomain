@@ -9,11 +9,9 @@
 	<body>
 		<div>
 			<div id='layout'>
-			<!--<div id='heading'>-->
 
 			{% include header.html %}
-
-				 
+			 
 			<div style='clear: both'></div>
 		</div>
 		<div id='content' class="hp">
@@ -35,11 +33,13 @@
 					{% endfor %}
 				</ul>
 			</div>
+			
+			  {% include footer.html %}
 			<div style='clear:both'></div>
 		</div>
 	
-
-					   {% include backToTop.html %}
+		  
+			 {% include backToTop.html %}
 
 </body>
 </html>
