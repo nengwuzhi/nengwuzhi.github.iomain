@@ -37,9 +37,15 @@
 			  {% include footer.html %}
 			<div style='clear:both'></div>
 		</div>
-	
-		  
-			 {% include backToTop.html %}
+    {% include backToTop.html %}
+    <script src="{{ " /js/smooth-scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // 整数。 完成滚动的速度（以毫秒为单位）
+        easing: 'easeInOutCubic', // 使用的缓动模式
+        offset: 20, // 整数。 以像素为单位偏移滚动锚点位置的距离
+      });
+    </script>
 
 </body>
 </html>
