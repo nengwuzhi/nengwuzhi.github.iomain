@@ -66,6 +66,7 @@
 	position: absolute;
 	font-size: 18px;
 	text-align: center;
+	    left: 0;
 	line-height: 56px;
 	width: 100%
 }
