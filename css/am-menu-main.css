@@ -150,7 +150,6 @@ a img {
 
 .post-image {
     margin: 0px 10px 0px 0px;
-    /* box-shadow: 0 0.5px 1px 1px #ababab; */
     border-radius: 2px;
 }
 
@@ -166,7 +165,6 @@ img:hover {
 .post-content {
     margin-top: 10px;
     font-size: 13px;
-    /* background: #fffef7!important; */
     color: #383630;
     padding: 20px 30px;
     background: url(http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/entry-meta-shadow.png) no-repeat scroll center top #FBFBFB;
