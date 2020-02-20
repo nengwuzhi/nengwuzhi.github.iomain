@@ -42,6 +42,7 @@
 	outline: 0;
 	padding: 0;
 	text-align: center;
+	line-height: 50px;
 	position: relative;
 	-webkit-user-drag: none;
 	font-weight: 700;
