@@ -1,57 +1,51 @@
 .site-footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-top: 35px;
-    text-align: center;
-    // margin-top: 50px;
-    background-color: #1c2123;
-    box-shadow: 0 -2px 4px 1px rgba(0,0,0,0.5);
-    color: #bbb;
-    
-.site-footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-top: 35px;
+  text-align: center;
+  // margin-top: 50px;
+  background-color: #1c2123;
+  box-shadow: 0 -2px 4px 1px rgba(0,0,0,0.5);
+  color: #bbb;
+  .site-footer {
   .wrapper {
     width: 1140px;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 14px;
-    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.03) 50%, rgba(255, 255, 255, 0) 52%), -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.03) 50%, rgba(255, 255, 255, 0) 52%);
-    -webkit-background-size: 1em 1em;
-    background-size: 1em 1em;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.03) 50%, rgba(255, 255, 255, 0) 52%), -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.03) 50%, rgba(255, 255, 255, 0) 52%);
+  -webkit-background-size: 1em 1em;
+  background-size: 1em 1em;
+}
+} {
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  } {
+    .description {
+      display: inline-block;
+    }
   }
 }
-
-        
-        p {
-            margin: 0;
-            line-height: 1.6;
-        }
-        .contact {
-            display: inline-block;
-            a {
+.contact {
+  display: inline-block;
+  a {
                 color: #ccc;
-                transition: 0.3s ease;
-                &:hover {
+  transition: 0.3s ease;
+  &: hover {
                     color: #fff;
-                }
-                i {
-                    margin: 0 5px;
-                    font-size: 20px;
-                }
-            }
-        }
-        .description {
-            display: inline-block;
-        }
-        .power {
-            a {
-                color: #8F90C5;
-                transition: 0.3s ease;
-                &:hover {
+}
+i {
+  margin: 0 5px;
+  font-size: 20px;
+}
+.power {
+  a {
+                color: #8f90c5;
+  transition: 0.3s ease;
+  &: hover {
                     color: #fff;
-                }
-            }
-        }
-    }
 }
