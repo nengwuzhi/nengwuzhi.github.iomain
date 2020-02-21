@@ -30,5 +30,4 @@ defaults:
       styles : [_post.css]
 
 # url
-category_dir: category/
-tag_dir: tag/
+
