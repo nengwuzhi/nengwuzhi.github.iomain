@@ -32,3 +32,4 @@ defaults:
 # url
 category_dir: category/
 tag_dir: tag/
+playlist_dir: /playlist/ || music
