@@ -1,395 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
 
-
-img, embed, object{
-	max-width: 100%;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.43);
-}
-
-
-.postcontent{
-	//padding : 10px;
-}
-
-body {
-	margin: 0px;
-	padding: 0px 20px 0px 20px;
-	background: #3a606d url(../images/pattern.png) repeat top left;
-
-}
-
-div#posts {
-    margin-left: 4%;
-}
-
-body, div, a, input, select, button, textarea {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	color: #508b93;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-}
-
-code {
-	font-weight: bold;
-}
-
-pre code {
-	font-weight: normal;
-}
-
-.pagination {
-    margin: 40px 0;
-}
-
-.assistive-text, .screen-reader-text {
-    overflow: hidden;
-    position: absolute!important;
-    width: 1px;
-    height: 1px;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px,1px,1px,1px);
-}
-
-.pagination .current {
-    background-color: #4d4d4d;
-    box-shadow: 0 2px 0 #000;
-    color: #fff;
-    text-shadow: 0 -1px 0 #000;
-}
-
-.pagination a, .pagination>span {
-    display: inline-block;
-    padding: 13px 14px 12px;
-    margin-right: 2px;
-    line-height: normal;
-    background-color: #eee;
-    box-shadow: 0 2px 0 #c8c8c8;
-    border-radius: 3px;
-    color: #494949;
-    text-shadow: 0 1px 0 #fff;
-    -webkit-transition: all 150ms ease;
-    transition: all 150ms ease;
-}
-
-
-a {
-    display: inline-block;
-    padding: 1px;
-    margin-bottom: 2px;
-    color: #4999ded4;
-    opacity: .80;
-    outline: 0;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-
-a img {
-	border: 4px;
-}
-
-
-#layout {
-	/width: 90%;
-	margin: auto;
-	text-align: left;
-}
-
-
-#content {
-    margin: 0px 5% 0px;
-    background: #e2e2e2;
-    padding: 30px 20px 20px 20px;
-    margin-top: 40px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 0 50px #d6d6d630 inset;
-}
-
-#footer {
-	margin: 30px 0px 0px 0px;
-	padding: 10px 0px 10px 0px;
-	border-top: 1px solid #dddddd;
-	text-align: center;
-	font-size: 13px;
-	background: #28393c;
-}
-
-#posts ul {
-	list-style:none;
-	margin: auto;
-	padding: 0px;
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 	
-}
+	</head>
+	<body>
+		<div>	
+                                             <div id="tabs" class="tabs">
+				<nav>
+					<ul>
+						<li><a href="#section-1"> <img src="images/Home-40.png"><span> 主页</span></a></li>
+						<li><a href="#section-2"> <img src="images/Autumn-40.png"><span> 推荐</span></a></li>
+						<li><a href="#section-3" class="icon-food"><span>Food</span></a></li>
+						<li><a href="#section-4" class="icon-lab"><span>Lab</span></a></li>
+						<li><a href="#section-5" class="icon-truck"><span>Order</span></a></li>
+					</ul>
+				</nav>
+				<div class="content">
+					<section id="section-1">
+                                                                                          <div class="mediabox">
+						<div id='posts' class="leftblock">
+				<ul>
+					  {% for cat in site.categories %}
+					{% for post in cat[1] %}
+						<li class='post'>
+							{% if post.image %}
+								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
+							{% endif %}
+							<div class="postcontent">
+					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
 
-#posts ul li {
-   margin: 0px 15px 15px 0px;
-    width: 250px;
-    float: left;
-    background: #ffffff!important;
-    border: 1px solid #00BCD4;
-    border-bottom: 1px solid #00BCD4;
-    box-shadow: 0 1px 2px rgba(90, 90, 90, 0.82), 0 0 50px #00000036 inset;
-}
+								<div class='post-content'>{{post.summary}}</div>
+							</div>
+						</li>
+					{% endfor %}
+					{% endfor %}
+				</ul>
+			</div>
+					</section>
+					<section id="section-2">
+						<div class="mediabox">
+							<img src="images/04.png" alt="img04" />
+							<h3>Asparagus Cucumber Cake</h3>
+							<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+						</div>
+						<div class="mediabox">
+							<img src="images/05.png" alt="img05" />
+							<h3>Magis Kohlrabi Gourd</h3>
+							<p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+						</div>
+						<div class="mediabox">
+							<img src="images/06.png" alt="img06" />
+							<h3>Ricebean Rutabaga</h3>
+							<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+						</div>
+					</section>
+					<section id="section-3">
+						<div class="mediabox">
+							<img src="images/02.png" alt="img02" />
+							<h3>Noodle Curry</h3>
+							<p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
+						</div>
+						<div class="mediabox">
+							<img src="images/06.png" alt="img06" />
+							<h3>Leek Wasabi</h3>
+							<p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+						</div>
+						<div class="mediabox">
+							<img src="images/01.png" alt="img01" />
+							<h3>Green Tofu Wrap</h3>
+							<p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
+						</div>
+					</section>
+					<section id="section-4">
+						<div class="mediabox">
+							<img src="images/03.png" alt="img03" />
+							<h3>Tomato Cucumber Curd</h3>
+							<p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+						</div>
+						<div class="mediabox">
+							<img src="images/01.png" alt="img01" />
+							<h3>Mushroom Green</h3>
+							<p>Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
+						</div>
+						<div class="mediabox">
+							<img src="images/04.png" alt="img04" />
+							<h3>Swiss Celery Chard</h3>
+							<p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. </p>
+						</div>
+					</section>
+					<section id="section-5">
+						<div class="mediabox">
+							<img src="images/02.png" alt="img02" />
+							<h3>Radish Tomato</h3>
+							<p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+						</div>
+						<div class="mediabox">
+							<img src="images/06.png" alt="img06" />
+							<h3>Fennel Wasabi</h3>
+							<p>Sea lettuce gumbo grape kale kombu cauliflower salsify kohlrabi okra sea lettuce broccoli celery lotus root carrot winter purslane turnip greens garlic.</p>
+						</div>
+						<div class="mediabox">
+							<img src="images/01.png" alt="img01" />
+							<h3>Red Tofu Wrap</h3>
+							<p>Green horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut wasabi tofu broccoli mixture soup.</p>
+						</div>
+					</section>
+				</div><!-- /content -->
+			</div><!-- /tabs -->
 
-#posts ul li img {
-	width: 100%;
-}
-
-.post-title {
-    margin: 0px 0px 8px 0px;
-    line-height: 20px;
-    font-size: 20px;
-    padding: 10px;
-    color: black;
-    text-align: center;
-}
-
-.post-image {
-    margin: 0px 10px 0px 0px;
-    border-radius: 2px;
-}
-
-img:hover {
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.9);
-}
-
-.post-date {
-	font-size: 11px;
-	color: #666;padding: 10px;
-}
-
-.post-content {
-    margin-top: 10px;
-    font-size: 13px;
-    color: #383630;
-    padding: 20px 30px;
-    background: url(http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/entry-meta-shadow.png) no-repeat scroll center top #FBFBFB;
-    border-radius: 0px 0px 0px 0px;
-}
-
-#side-bar {
-background: #fff;
-/*background: none repeat scroll 0% 0% #FFF;
-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);*/
-border-radius: 3px;
-/*border: solid 1px rgba(99, 103, 106, 0.22);*/
-padding: 10px;
-width: 20%;
-float: left;
-margin: 20px 5px 0px 0px;
-}
-
-#side-bar #user-pic{
-	width: 80px;
-	height: 80px;
-}
-
-#side-bar #user-name{
-	font-size: 12px;
-	margin: 5px 0px 0px 0px;
-}
-
-#side-bar #tags {
-
-	margin: 20px 0px 0px 0px;
-}
-
-#side-bar #date {
-	font-size: 11px;
-}
-
-#page-title {
-	margin-top: 0px;
-	padding-top: 0px;
-	font-size: 20px;
-	color:#222;
-	font-weight: 800;
-}
-
-#page {
-	margin-top: 20px;
-	width: 80%;
-	color: #111;
-	margin-left: 10%;
-	text-align: left;
-	padding-left: 3%;
- border-left: 1px dashed #ada6a6;
-font-size: 1.3em;
-overflow: hidden;
-/*background: none repeat scroll 0% 0% #FFF;
-box-shadow: 5px 8px 7px rgba(99, 60, 60, 0.15);*/
-border-radius: 3px;
-padding: 10px;
-//border: solid 1px rgba(99, 103, 106, 0.22);
-}
-
-.tag {
-	font-size: 12px;
-    padding: 2px 6px 2px 6px;
-    color: white;
-    line-height: 24px;
-}
-
-blockquote{
-
-	font-family: monospace;
-	font-size: 16px;
-	/*font-style: italic;*/
-	border-left: 4px solid #ddd;
-	padding-left: 20px;
-}
-
-.tag { background-color: #008080}
-
-
-/****** Media Queries For Adaptive Layouts******/
-
-@media only screen and (min-width: 1367) {
-
-	#posts ul li {
-		width: 220px;
-	}
-}
-
-@media only screen and (max-width: 1366) {
-
-	#posts ul li {
-		width: 273px;
-	}
-}
-
-/* Tables - Landscape */
-@media only screen and (max-width: 1280) {
-
-	#posts ul li {
-		width: 252px;
-	}
-
-}
-
-/* Tables - Landscape */
-@media
-only screen and (max-device-width:1024px),
-only screen and (max-width: 1024px) {
-
-	#posts ul li {
-		width: 265px;
-	}
-
-}
-
-/* Tables - Verticle */
-@media
-only screen and (max-device-width:768px),
-only screen and (max-width: 768px) {
-
-	#posts ul li {
-		width: 300px;
-	}
-}
-
-/* Smart Phone */
-@media
-only screen and (max-device-width:600px),
-only screen and (max-width: 600px) {
-
-	#logo, #links {
-		float: none;
-		text-align: center;
-	}
-
-	#links {
-		margin: 0 0 0 0;
-	}
-
-	#posts ul li {
-		width: 95%;
-	}
-
-	#side-bar {
-		display: none;
-	}
-
-	#page {
-		border-left: 0px;
-		width: 100%;
-		margin: 0 0 0 0 ;
-		padding: 0 0 0 0 ;
-	}
-
-	#page img {
-		width: 100%;
-	}
-}
-
-
-
-.post-title {
-    margin: 8px 0px 8px 0px;
-}
-
-section{
-	background-size: cover;
-        background-position: center;
-	height:100px;
-	width:100%;
-	margin-bottom: 40px;
-}
-
-h1.post-title {	
-    font-size: 20px;
-    font-weight: normal;
- /* background: #ffffff url(https://tympanus.net/Tutorials/MovingBoxesContent/images/pattern.png) repeat top left;
-}
-
-/* remake homepage */
-
-#posts.leftblock, .rightblock {width:100%}
-#content.hp{background: transparent}
-.rightblock{color:#444;text-align:left}
-.rightblock b, .rightblock strong, .rightblock a {color: #555}
-
-@media (min-width: 770px) {
-	#heading {
-		padding: 25px 0px 20px 0px;
-		position: relative;
-		border-bottom: 0px solid #eee;
-		max-width: 1100px;
-		margin: 0 auto;
-		height: 40px;
-		}
-
-	#content.hp{
-	 margin: 0 auto;
-         background: #948f7926;
-         padding-top: 40px;
-         max-width: 1309px;
-	}
-	#posts.leftblock {
-		width: 100%;
-	        float: right;
-		margin: 0px -80px 0px 0px;
-	}
-	#posts ul{width:100%}
-	.rightblock{
-		width:20%;
-		float:left;
-	}
-	.rightblock b, .rightblock strong, .rightblock a {color: #555}
-
-}
-
-@media (max-width:770px) {
-	#content {
-		margin: 0;
-		background: #fffef4f2;
-		padding: 20px;
-		margin-top: 40px;
-		color: #555!important;
-		}
-}
-
+		</div>
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+	</script>
+   </div>	
+	</body>
+</html>
