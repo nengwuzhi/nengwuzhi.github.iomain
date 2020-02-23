@@ -118,7 +118,8 @@
 /* Content */
 .content section {
 	font-size: 1.25em;
-	padding: 3em 1em;
+	padding: 1em 1em;
+	height: auto;
 	margin: 0 auto;
 }
 
