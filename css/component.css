@@ -117,11 +117,11 @@
 
 /* Content */
 .content section {
-	font-size: 1.25em;
-	padding: 3em 1em;
-	display: none;
-	max-width: 1230px;
-	margin: 0 auto;
+    font-size: 1.25em;
+    /* padding: 3em 1em; */
+    display: none;
+    max-width: 1230px;
+    margin: 0 auto;
 }
 
 .content section:before,
