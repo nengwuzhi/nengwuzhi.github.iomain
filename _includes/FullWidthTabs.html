@@ -41,7 +41,6 @@
 					<section id="section-2">
 					<ul>
 					 {% for post in site.categories.tuijian %}
-					{% for post in cat[1] %}
 						<li class='post'>
 							{% if post.image %}
 								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
@@ -60,7 +59,6 @@
 					<section id="section-3">
 					<ul>
 					 {% for post in site.categories.computer network %}
-					{% for post in cat[1] %}
 						<li class='post'>
 							{% if post.image %}
 								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
