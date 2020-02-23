@@ -20,7 +20,7 @@
 					<div class="content">
 					<section id="section-1">
 						<div id='posts' class="leftblock">
-			
+			<ul>
 					  {% for cat in site.categories %}
 					{% for post in cat[1] %}
 						<li class='post'>
@@ -35,7 +35,7 @@
 						</li>
 					{% endfor %}
 					{% endfor %}
-				
+			 </ul>
 					</section>
 						
 					<section id="section-2">
@@ -57,7 +57,7 @@
 						
 					</section>
 					<section id="section-3">
-			
+			  <ul>
 					 {% for post in site.categories.computer network %}
 						<li class='post'>
 							{% if post.image %}
@@ -70,7 +70,7 @@
 							</div>
 						</li>
 					{% endfor %}
-			      
+			      </ul>
 					</section>
 		
 				</div><!-- /content -->
