@@ -3,17 +3,15 @@
 	<head>
 
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+	
 	</head>
 	<body>
 			
                                              <div id="tabs" class="tabs">
 				<nav>
 					<ul>
-						<li><a href="#section-1"> <img src="img/Home-40.png"><span> 主页</span></a></li>
-						<li><a href="#section-2"> <img src="img/Autumn-40.png"><span> 推荐</span></a></li>
+						<li><a href="#section-1"> <img src="images/Home-40.png"><span> 主页</span></a></li>
+						<li><a href="#section-2"> <img src="images/Autumn-40.png"><span> 推荐</span></a></li>
 						<li><a href="#section-3" class="icon-food"><span>Food</span></a></li>
 						<li><a href="#section-4" class="icon-lab"><span>Lab</span></a></li>
 						<li><a href="#section-5" class="icon-truck"><span>Order</span></a></li>
@@ -21,21 +19,24 @@
 				</nav>
 				<div class="content">
 					<section id="section-1">
-						<div class="mediabox">
-							<img src="img/01.png" alt="img01" />
-							<h3>Sushi Gumbo Beetroot</h3>
-							<p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
-						</div>
-						<div class="mediabox">
-							<img src="img/02.png" alt="img02" />
-							<h3>Pea Sprouts Fava Soup</h3>
-							<p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.</p>
-						</div>
-						<div class="mediabox">
-							<img src="img/03.png" alt="img03" />
-							<h3>Turnip Broccoli Sashimi</h3>
-							<p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-						</div>
+						<div id='posts' class="leftblock">
+				<ul>
+					  {% for cat in site.categories %}
+					{% for post in cat[1] %}
+						<li class='post'>
+							{% if post.image %}
+								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
+							{% endif %}
+							<div class="postcontent">
+					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
+
+								<div class='post-content'>{{post.summary}}</div>
+							</div>
+						</li>
+					{% endfor %}
+					{% endfor %}
+				</ul>
+			</div>
 					</section>
 					<section id="section-2">
 						<div class="mediabox">
