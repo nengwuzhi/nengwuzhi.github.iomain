@@ -3,11 +3,13 @@
 img.post-image {
     width: 26px;
     vertical-align: sub;
-}
-
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.43);
 }
 
+ul.grid-items img {
+    max-width: 100%;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.43);
+}
 
 .postcontent{
 	//padding : 10px;
