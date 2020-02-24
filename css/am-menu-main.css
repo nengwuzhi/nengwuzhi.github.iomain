@@ -101,10 +101,10 @@ a:hover {
 
 #content {
     margin: 0px 5% 0px;
-    background: #39393a;
+    background: #f3f3f3;
     padding: 30px 20px 20px 20px;
     margin-top: 40px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 0 50px #00000070 inset;
+    box-shadow: 0 1px 1px #424242, 0 0 50px #a09e9e85 inset;
 }
 
 #footer {
