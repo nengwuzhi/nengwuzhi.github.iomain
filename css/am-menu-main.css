@@ -1,7 +1,10 @@
 
 
 img.post-image {
-    max-width: 100%;
+    width: 26px;
+    vertical-align: sub;
+}
+
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.43);
 }
 
