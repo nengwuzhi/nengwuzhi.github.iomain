@@ -42,30 +42,22 @@
 					
 					<section id="section-2">
 						<div id='posts' class="leftblock">
-						<ul>
-		<!-- Don't edit anything here, categories are dynamically generated -->
+				<ul>
+		 {% for cat in site.Category.推荐 %}
+					{% for post in cat[1] %}
+						<li class='post'>
+							{% if post.image %}
+								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
+							{% endif %}
+							<div class="postcontent">
+					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
 
-<nav class="navbar-expand-lg navbar-light bg-white pl-2 pr-2">
-    <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExplore" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExplore">
-    <ul class="navbar-nav categories">
-    {% assign categories_list = site.categories %}
-      {% if categories_list.first[0] == null %}
-        {% for category in categories_list %}
-          <li class="nav-item"><a class="nav-link" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }} ({{ site.tags[category].size }})</a></li>
-        {% endfor %}
-      {% else %}
-        {% for category in categories_list %}
-          <li class="nav-item"><a class="nav-link" href="{{site.baseurl}}/categories.html#{{ category[0] | downcase }}">{{ category[0] }} ({{ category[1].size }})</a></li>
-        {% endfor %}
-      {% endif %}
-    {% assign categories_list = nil %}
-    </ul>    
-    </div>
-</nav>
-
+								<div class='post-content'>{{post.summary}}</div>
+							</div>
+						</li>
+					{% endfor %}
+					{% endfor %}
+					
 				</ul>	
 						</div>
 					</section>
