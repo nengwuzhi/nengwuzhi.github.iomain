@@ -43,8 +43,7 @@
 					<section id="section-2">
 						<div id='posts' class="leftblock">
 				<ul>
-		 {% for cat in site.Category.推荐 %}
-					{% for post in cat[1] %}
+		       {% for post in site.categories.blog %}
 						<li class='post'>
 							{% if post.image %}
 								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
@@ -56,8 +55,6 @@
 							</div>
 						</li>
 					{% endfor %}
-					{% endfor %}
-					
 				</ul>	
 						</div>
 					</section>
