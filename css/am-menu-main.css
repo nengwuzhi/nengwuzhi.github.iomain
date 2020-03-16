@@ -127,7 +127,7 @@ a:hover {
     margin: 0px 15px 15px 0px;
     /* width: 250px; */
     /* float: left; */
-    break-inside: avoid;//防列断裂
+    break-inside: avoid;   //列里面的项不折断
     background: #ffffff!important;
     border: 1px solid #00BCD4;
     border-bottom: 1px solid #00BCD4;
