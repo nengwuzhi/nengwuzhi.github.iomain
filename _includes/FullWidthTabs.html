@@ -59,7 +59,7 @@
 						</div>
 					</section>
 					<section id="section-3">
-									<div id='posts' class="card-columns">
+									<div id='posts' class="col-lg-8">
 				<ul>
 		       {% for post in site.categories.video %}
 						<li class='post'>
@@ -73,7 +73,9 @@
 							</div>
 						</li>
 					{% endfor %}
-					 {% include music-Player.html %}
+					<div class="col-lg-4">
+					{% include music-Player.html %}
+					</div>
 				</ul>	
 						</div>
 					</section>
