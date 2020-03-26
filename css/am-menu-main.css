@@ -125,7 +125,7 @@ a:hover {
 
 #posts ul li {
     margin: 0px 15px 15px 0px;
-    /* width: 250px; */
+    width: 280px;
     float: left;
     break-inside: avoid;   //列里面的项不折断;
     border: 1px solid #00BCD4;
