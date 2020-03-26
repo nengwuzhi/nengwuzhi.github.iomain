@@ -62,9 +62,13 @@
 				<ul>
 		       {% for post in site.categories.video %}
 						<li class='post'>
-							{% if post.image %}
-								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
-							{% endif %}
+	    {% if post.type == "youtube" %}
+            {% if post.yt-video-id %}
+                <div class="video_container">
+                    <iframe src="https://www.youtube.com/embed/{{ post.yt-video-id }}?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                </div>
+            {% endif %}
+            {% endif %}
 							<div class="postcontent">
 					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
 
