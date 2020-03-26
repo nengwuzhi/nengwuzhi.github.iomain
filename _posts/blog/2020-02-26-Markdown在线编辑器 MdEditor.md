@@ -2,7 +2,7 @@
 author: person
 layout: post_full
 title: Markdown使用教程
-image: images/03.jpg
+image: images/blog/03.jpg
 tags: [Markdown，教程]
 category: [blog]
 ---
