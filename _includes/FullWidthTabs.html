@@ -25,10 +25,7 @@
 							{% if post.image %}
 								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
 							{% endif %}
-							<div class="postcontent">
-					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
-
-								<div class='post-content'>{{post.summary}}</div>
+							
 							{% if post.type == "youtube" %}
             {% if post.yt-video-id %}
                 <div class="video_container">
@@ -36,7 +33,10 @@
                 </div>
             {% endif %}
             {% endif %}
-							
+			<div class="postcontent">
+					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
+
+								<div class='post-content'>{{post.summary}}</div>				
 							
 							</div>
 						</li>
