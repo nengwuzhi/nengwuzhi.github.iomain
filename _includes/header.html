@@ -1,13 +1,15 @@
 	<!--AM Menu Start-->
 <header class="am-header">
-   <div class="logo" title="Place for your Logo">AM Menu</div>
-   <div class="search-trigger">
-      <div class='s-wrapper'>
-         <div id='circle'></div>
-         <div id='bar'></div>
-      </div>
-   </div>
-   <!--Search-trigger-->
+   <div class="logo">
+                <a class="logo__link" href="{{ site.baseurl }}/">
+                  {%if site.logo %}
+                  <img class="logo__image" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}">
+                  {% else %}
+                  {{ site.title }}
+                  {% endif %}
+                </a>
+              </div>
+   <!--logo-->
    <div class="search-container">
       <div class="search-box">
          <div class="search-icon">
